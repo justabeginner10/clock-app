@@ -7,7 +7,7 @@ const App = () => {
   const [ctime, setCtime] = useState(time);
 
   const UpdateTime = () => {
-    console.log("Time has been updated");
+    time = new Date().toLocaleTimeString();
     setCtime(time);
   };
 
